@@ -1,0 +1,48 @@
+.DS_Store
+
+.docker-sync
+
+# Frontend
+dist/
+node_modules/
+
+# bazel
+bazel-*
+
+# ignore protobuf intermediary files
+*.pb.go
+*.pb.gw.go
+!vendor/**/*.pb.go
+
+# Server package builds
+build/bin
+build/out
+build/config
+
+# Binaries for programs and plugins
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+vendor/
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# ignore editor specific files
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# Private keys
+*.key
+
+# terraform
+.terraform
+plan
+
+# auto generated files
+fmt
